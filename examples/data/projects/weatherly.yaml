@@ -1,0 +1,16 @@
+id: weatherly
+title:
+  fr: "Weatherly – Application météo mobile"
+  en: "Weatherly – Mobile Weather App"
+tags: [flutter, dart, mobile, api]
+bullets:
+  - text:
+      fr: "Application mobile Flutter consommant une API météo publique, avec cache hors-ligne"
+      en: "Flutter mobile app consuming a public weather API, with offline caching"
+    tags: [flutter, dart, mobile]
+    weight: 1.0
+  - text:
+      fr: "Publication sur les stores et suivi des retours utilisateurs"
+      en: "Published to app stores with user feedback tracking"
+    tags: [mobile, release]
+    weight: 0.7

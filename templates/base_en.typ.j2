@@ -1,0 +1,124 @@
+#import "@preview/fontawesome:0.5.0": fa-github, fa-linkedin-in, fa-envelope, fa-map-pin
+
+#set page(paper: "a4", margin: (x: 1.4cm, y: 1.4cm))
+#set text(size: 10pt, lang: "en")
+#set par(justify: true, leading: 0.6em)
+#set list(indent: 6pt)
+
+#let section-title(t) = {
+  v(6pt)
+  text(weight: "bold", size: 11pt, t)
+  v(2pt)
+  line(length: 100%, stroke: 0.4pt)
+  v(4pt)
+}
+
+#let bullet-marker = box(width: 8pt, height: 8pt, radius: 4pt, stroke: 0.8pt)
+
+#let exp-entry(title, org, dates, loc, body) = {
+  block(below: 9pt)[
+    #grid(
+      columns: (14pt, 1fr),
+      [#v(2pt)#bullet-marker],
+      [
+        #text(weight: "bold")[#title] \
+        #text(size: 9pt)[#org] \
+        #grid(
+          columns: (1fr, auto),
+          text(size: 9pt, style: "italic")[#dates],
+          text(size: 9pt, style: "italic")[#loc],
+        )
+        #v(2pt)
+        #body
+      ]
+    )
+  ]
+}
+
+#grid(
+  columns: (1fr, auto),
+  column-gutter: 12pt,
+  [
+    #text(size: 18pt)[{{ identity.name_first }} #text(weight: "bold")[{{ identity.name_last }}]] \
+    #v(3pt)
+    #text(size: 13pt, weight: "bold")[{{ identity.title }}]
+    #v(6pt)
+    #text(size: 9pt)[{{ identity.summary }}]
+  ],
+  align(right + top)[
+    #text(size: 9pt)[
+      #fa-github() {{ identity.github | typst_escape }} \
+      #fa-linkedin-in() {{ identity.linkedin | typst_escape }}
+    ]
+  ],
+)
+
+#v(8pt)
+
+#rect(width: 100%, stroke: 0.4pt, inset: (x: 0pt, y: 6pt))[
+  #grid(
+    columns: (1fr, 1fr),
+    align(center)[#fa-envelope() #h(4pt){{ identity.email | typst_escape }}],
+    align(center)[#fa-map-pin() #h(4pt){{ identity.location }}],
+  )
+]
+
+#v(10pt)
+
+#grid(
+  columns: (62%, 38%),
+  column-gutter: 14pt,
+  [
+{% for section in left_sections %}
+{% if section.type == "experiences" %}
+    #section-title("Professional Experience")
+{% for item in section['items'] %}
+    #exp-entry(
+      [{{ item.title }}],
+      [{{ item.org }}],
+      [{{ item.dates }}],
+      [{{ item.location }}],
+      [
+{% for b in item.bullets %}
+        - {{ b }}
+{% endfor %}
+      ]
+    )
+{% endfor %}
+{% elif section.type == "projects" %}
+    #section-title("Projects")
+{% for item in section['items'] %}
+    *{{ item.title }}* \
+    #v(2pt)
+{% for b in item.bullets %}
+    {{ b }}
+{% endfor %}
+    #v(8pt)
+{% endfor %}
+{% endif %}
+{% endfor %}
+  ],
+  [
+{% for section in right_sections %}
+{% if section.type == "skills" %}
+    #section-title("TECH STACK")
+{% for cat in skills_categories %}
+    *{{ cat.label }}* \
+    {{ cat['items'] | join(", ") }}
+    #v(5pt)
+{% endfor %}
+{% elif section.type == "education" %}
+    #section-title("Education")
+{% for item in section['items'] %}
+    #exp-entry(
+      [{{ item.title }}],
+      [{{ item.org }}],
+      [{{ item.dates }}],
+      [{{ item.location }}],
+      [{{ item.description }}]
+    )
+{% endfor %}
+{% endif %}
+{% endfor %}
+  ]
+)

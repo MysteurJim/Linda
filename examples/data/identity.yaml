@@ -1,0 +1,21 @@
+name_first: Alex
+name_last: MARTIN
+title:
+  fr: "Développeur Fullstack – Web & Cloud"
+  en: "Fullstack Developer – Web & Cloud"
+summary:
+  fr: >
+    Développeur fullstack avec une expérience en conception d'applications web
+    et de services cloud. J'aime construire des produits simples, robustes et
+    bien testés, et je m'investis dans la qualité du code à chaque étape.
+  en: >
+    Fullstack developer with experience designing web applications and cloud
+    services. I enjoy building simple, robust, well-tested products and care
+    about code quality at every step.
+contact:
+  github: "@alexmartin"
+  linkedin: "@alex-martin-example"
+  email: "alex.martin@example.com"
+  location:
+    fr: "Lyon, France"
+    en: "Lyon, France"

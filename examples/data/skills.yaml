@@ -1,0 +1,25 @@
+categories:
+  - id: languages
+    display:
+      fr: "Langages"
+      en: "Languages"
+    items: [Java, Python, TypeScript, Dart]
+    tags: [java, python, typescript, dart]
+  - id: frameworks
+    display:
+      fr: "Frameworks / Librairies"
+      en: "Frameworks / Libraries"
+    items: [Spring Boot, React, FastAPI, Flutter]
+    tags: [spring-boot, react, fastapi, flutter]
+  - id: devops
+    display:
+      fr: "DevOps & Cloud"
+      en: "DevOps & Cloud"
+    items: [Docker, Kubernetes, GitHub Actions]
+    tags: [docker, kubernetes, cicd, github-actions]
+  - id: databases
+    display:
+      fr: "Bases de données"
+      en: "Databases"
+    items: [PostgreSQL, Redis]
+    tags: [postgresql, redis, database]

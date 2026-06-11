@@ -1,0 +1,15 @@
+# Personal CV data (user workspace, never committed)
+cv/
+output/
+*.pdf
+
+# Internal working docs
+docs/superpowers/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
+*.egg-info/
+.venv*/

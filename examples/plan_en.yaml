@@ -1,0 +1,20 @@
+lang: en
+offer_context: "Backend Developer @ ExampleCorp"
+sections:
+  left:
+    - type: experiences
+      items:
+        - id: acme-corp
+          bullets: all
+        - id: globex
+          bullets: [0]
+    - type: projects
+      items:
+        - id: taskflow
+          bullets: all
+  right:
+    - type: skills
+    - type: education
+      items:
+        - id: state-university
+        - id: cloud-certification

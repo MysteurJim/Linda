@@ -1,0 +1,19 @@
+id: acme-corp
+title:
+  fr: "Développeur Backend – Plateforme E-commerce"
+  en: "Backend Developer – E-commerce Platform"
+org: ACME Corp
+dates: "03/2024 – présent"
+location: Lyon
+tags: [java, spring-boot, postgresql, kubernetes, backend, api]
+bullets:
+  - text:
+      fr: "Conception et développement d'APIs REST en Java Spring Boot pour la plateforme e-commerce"
+      en: "Designed and built REST APIs in Java Spring Boot for the e-commerce platform"
+    tags: [java, spring-boot, api, backend]
+    weight: 1.0
+  - text:
+      fr: "Migration des services vers Kubernetes, réduisant les coûts d'infrastructure de 30%"
+      en: "Migrated services to Kubernetes, cutting infrastructure costs by 30%"
+    tags: [kubernetes, docker, devops]
+    weight: 0.9

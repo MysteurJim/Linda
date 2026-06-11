@@ -1,0 +1,16 @@
+id: taskflow
+title:
+  fr: "TaskFlow – Gestionnaire de tâches collaboratif"
+  en: "TaskFlow – Collaborative Task Manager"
+tags: [python, fastapi, react, postgresql, fullstack]
+bullets:
+  - text:
+      fr: "Application web de gestion de tâches en équipe avec API Python FastAPI et frontend React"
+      en: "Team task management web app with a Python FastAPI backend and React frontend"
+    tags: [python, fastapi, react, fullstack]
+    weight: 1.0
+  - text:
+      fr: "Synchronisation temps réel via WebSockets et déploiement continu sur un cluster Kubernetes"
+      en: "Real-time sync via WebSockets and continuous deployment to a Kubernetes cluster"
+    tags: [websockets, kubernetes, cicd]
+    weight: 0.8

@@ -1,0 +1,21 @@
+formations:
+  - id: state-university
+    title:
+      fr: "Master en Informatique"
+      en: "Master's Degree in Computer Science"
+    org: "Université Exemple"
+    dates: "09/2019 – 06/2024"
+    location: Lyon
+    description:
+      fr: "Spécialisation génie logiciel et systèmes distribués"
+      en: "Software engineering and distributed systems specialization"
+  - id: cloud-certification
+    title:
+      fr: "Certification Kubernetes (CKAD)"
+      en: "Kubernetes Certification (CKAD)"
+    org: "CNCF"
+    dates: "2024"
+    location: En ligne
+    description:
+      fr: "Développement d'applications cloud-native sur Kubernetes"
+      en: "Cloud-native application development on Kubernetes"

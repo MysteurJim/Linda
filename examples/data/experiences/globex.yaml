@@ -1,0 +1,19 @@
+id: globex
+title:
+  fr: "Développeur Frontend Stagiaire – Outils Internes"
+  en: "Frontend Developer Intern – Internal Tools"
+org: Globex
+dates: "06/2023 – 12/2023"
+location: Paris
+tags: [react, typescript, frontend, ui]
+bullets:
+  - text:
+      fr: "Développement d'interfaces React / TypeScript pour les outils internes de reporting"
+      en: "Built React / TypeScript interfaces for internal reporting tools"
+    tags: [react, typescript, frontend]
+    weight: 1.0
+  - text:
+      fr: "Mise en place de tests end-to-end automatisés avec Playwright"
+      en: "Set up automated end-to-end tests with Playwright"
+    tags: [testing, playwright, ci]
+    weight: 0.8
