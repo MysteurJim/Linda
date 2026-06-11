@@ -1,4 +1,4 @@
-# LINDA
+# LINDA - CV GENERATOR
 
 **The plan, not the copy.** Write your career data **once** as modular YAML
 blocks; describe each job application as a small, versionable `plan.yaml` that
